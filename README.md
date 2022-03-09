@@ -7,6 +7,7 @@ yum groupinstall 'Container Management' -y
 after clonning the repo
 ```
 cd podman-monerod
+sed -i 's/xxx/<your-wallet-address>/' Dockerfile
 buildah build -f Dockerfile -t monerod .
 ```
 
